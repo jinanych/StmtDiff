@@ -1,4 +1,3 @@
-# StmtDiff
 == DESCRIPTION:
 
 This is a tree-differencing tool for identifying the within-statement changes. 
