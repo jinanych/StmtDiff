@@ -31,8 +31,12 @@
         dlinetuplechange;
 
     var search = function() {
+ 
+
+
         var s = [$("#s1").val(), parseInt($("#s2").val()), parseInt($("#s3").val())];
         if (s[0] == -1) return;
+
         //init
         stm = {};
         dtm = {};//distiller changes
@@ -49,6 +53,7 @@
         s[1] = select[s[0]][s[1]];
         console.log(s);
         $.each(data1, function(i, t) {
+            
             if (t["actiontype"] == s[0] && t["whichpart"] == s[1] && t["changecategory"] == s[2]) {
                 console.log(t);
                 t["changetype"] = t["actiontype"] + " " + t["whichpart"];
@@ -182,6 +187,8 @@
         return "<span>" + p1.replace(/\n/g, "&nbsp;</span><span>").replace(/ /g, "&nbsp;").replace(/\t/g, "&emsp;") + "</span>";
     }
     var change = function() {
+       
+
         var d = r[parseInt(this.dataset.id) - 1];
         $(".active").attr("class", "page-item");
         this.setAttribute("class", "page-item active");

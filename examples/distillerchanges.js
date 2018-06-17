@@ -1,5 +1,14 @@
 var data2 = [
 	{
+		"linetupleid" : 85403,
+		"linenumber" : 181,
+		"changeype" : "CONDITION_EXPRESSION_CHANGE",
+		"changeentity" : "IF_STATEMENT",
+		"changecontent" : "((portFile != null) && portFile.exists())]((portFile != null) && new File(portFile).exists())",
+		"parententity" : "METHOD"
+		
+	},
+	{
 		"linetupleid" : 145,
 		"linenumber" : 491,
 		"changeype" : "STATEMENT_DELETE",

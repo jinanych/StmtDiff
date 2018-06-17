@@ -1,10 +1,17 @@
 var gumtrees = [
 	{
+		"linetupleid" : 85403,
+		"lineinfo" : "-181 		if(portFile != null && portFile.exists())\n+132 		if(portFile != null && new File(portFile).exists())\n",
+		"scripts" : "DEL SimpleName: portFile\nINS SimpleName: portFile to ClassInstanceCreation at 1\nINS ClassInstanceCreation to MethodInvocation at 0\n",
+		"leftlines" : "		if(portFile != null &amp;&amp; <span class=\"marker\" id=\"mapping-37\"></span><span class=\"token del\" data-title=\"MethodInvocation/SimpleName\">portFile</span>.exists())\n",
+		"rightlines" : "		if(portFile != null &amp;&amp; <span class=\"marker\" id=\"mapping-278\"></span><span class=\"token add\" data-title=\"MethodInvocation/ClassInstanceCreation\">new <span class=\"marker\" id=\"mapping-279\"></span><span class=\"token mv\" id=\"move-dst-21\" data-title=\"ClassInstanceCreation/SimpleType\">File</span>(portFile)</span>.exists())\n"
+	},
+	{
 		"linetupleid" : 115,
 		"lineinfo" : "-87           bind(Foo.class).to(Foo.class);\n+87           bind(Foo.class);\n",
 		"scripts" : "MOV MethodInvocation to ExpressionStatement at 0\nDEL SimpleName: to\nDEL SimpleType: Foo\nDEL SimpleName: Foo\nDEL TypeLiteral\nDEL MethodInvocation\n",
-		"leftlines" : "          <span class=\"marker\" id=\"mapping-2\"></span><span class=\"token del\" data-title=\"ExpressionStatement/MethodInvocation\"><span class=\"marker\" id=\"mapping-3\"></span><span class=\"token mv\" id=\"move-src-2\" data-title=\"MethodInvocation/MethodInvocation\">bind(Foo.class)</span>.to(Foo.class)</span>;\n",
-		"rightlines" : "          <span class=\"marker\" id=\"mapping-6\"></span><span class=\"token mv\" id=\"move-dst-2\" data-title=\"ExpressionStatement/MethodInvocation\">bind(Foo.class)</span>;\n"
+		"leftlines" : "          <span class='token del' > Binding<?></span> binding =  <span class='token del' > Binding</span>.newInstance(container, key, builder.getSource(), factory);",
+		"rightlines" : "          <span class='token add' > BindingImpl<?></span> binding =  <span class='token add' > BindingImpl</span>.newInstance(container, key, builder.getSource(), factory);"
 	},
 	{
 		"linetupleid" : 145,
